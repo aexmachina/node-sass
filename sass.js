@@ -64,6 +64,7 @@ var prepareOptions = function (options) {
     comments: SASS_SOURCE_COMMENTS[sourceComments] || 0,
     stats: stats,
     sourceMap: options.sourceMap,
+    sourceMapSources: options.sourceMapSources,
     precision: parseInt(options.precision) || 5,
     success: function onSuccess(css, sourceMap) {
       finishStats(stats, sourceMap);
